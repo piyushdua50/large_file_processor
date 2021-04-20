@@ -81,6 +81,10 @@ Aim is to build a system which is able to handle long running processes in a dis
 +-------------------+----------------+
 
 
+### Points not achieved
+* As per my understanding all the points have been achieved.
+
+
 ### Improvement required
 * Can make a good UI based system which will take a CSV file as an input and process it into a required table.
 
