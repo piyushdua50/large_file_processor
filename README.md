@@ -12,22 +12,22 @@ We need to be able to import products from a CSV file and into a database. There
 5. An aggregated table on above rows with `name` and `no. of products` as the columns
 
 
-**Language used- ** Python3
-**Database used- ** MySQL
+**Language used-** Python3
+**Database used-** MySQL
 
 ### Steps to run
-1. Download the project using- 
-2. Setup the database
-  * Login to your MySQL database
-  * Go to the src/database folder
-  * Execute the SCHEMA.sql script in order to create and use the schema
-  * Execute the PRODUCTS.sql in order the create the PRODUCTS table
-  * Execute the PRODUCT_COUNT_DTL.sql in order to create the PRODUCT_COUNT_DTL table
+1. Download the project using- `https://github.com/piyushdua50/large_file_processor.git`
+2. Setup the database.
+   * Login to your MySQL database
+   * Go to the src/database folder
+   * Execute the SCHEMA.sql script in order to create and use the schema
+   * Execute the PRODUCTS.sql in order the create the PRODUCTS table
+   * Execute the PRODUCT_COUNT_DTL.sql in order to create the PRODUCT_COUNT_DTL table
 3. Now install the python dependencies
-  * pandas- `pip install pandas`
-  * os- `pip install os`
-  * mysql-connector- `pip install mysql-connector`
-  * python-dotenv- `pip install python-dotenv`
+   * pandas- `pip install pandas`
+   * os- `pip install os`
+   * mysql-connector- `pip install mysql-connector`
+   * python-dotenv- `pip install python-dotenv`
 4. Now place the database username, database passowrd and database name in .env file.
 5. Execute this command- `python src/server.py`
 
