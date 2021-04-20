@@ -24,10 +24,10 @@ Aim is to build a system which is able to handle long running processes in a dis
    * Execute the `PRODUCT_COUNT_DTL.sql` in order to create the PRODUCT_COUNT_DTL table
 4. Now install the python dependencies
    * pandas- `pip install pandas`
-   * os-sys `pip install os-sys`
+   * os-sys- `pip install os-sys`
    * mysql-connector- `pip install mysql-connector`
    * python-dotenv- `pip install python-dotenv`
-5. Now place the database username, database password and database name in .env file.
+5. Now provide the database user, database password and database name in .env file.
 6. Execute this command- `python src/server.py`
 
 
