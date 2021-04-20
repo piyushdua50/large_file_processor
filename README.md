@@ -4,7 +4,7 @@ Aim is to build a system which is able to handle long running processes in a dis
 
 **Points to achieve**
 1. Your code should follow concept of OOPS
-2. Support for regular non-blocking parallel ingestion of the given file into a table. Consider thinking about the scale of what should happen if the file is to be processed in 2 mins.
+2. Support for regular non-blocking parallel ingestion of the given file into a table. Consider thinking about the scale of what should happen if the file is to be processed in 2 mins
 3. Support for updating existing products in the table based on `sku` as the primary key. (Yes, we know about the kind of data in the file. You need to find a workaround for it)
 4. All product details are to be ingested into a single table
 5. An aggregated table on above rows with `name` and `no. of products` as the columns
@@ -19,9 +19,9 @@ Aim is to build a system which is able to handle long running processes in a dis
 3. Setup the database.
    * Login to your MySQL database
    * Go to the src/database folder
-   * Execute the SCHEMA.sql script in order to create and use the schema
-   * Execute the PRODUCTS.sql in order the create the PRODUCTS table
-   * Execute the PRODUCT_COUNT_DTL.sql in order to create the PRODUCT_COUNT_DTL table
+   * Execute the `SCHEMA.sql` script in order to create and use the schema
+   * Execute the `PRODUCTS.sql` in order the create the PRODUCTS table
+   * Execute the `PRODUCT_COUNT_DTL.sql` in order to create the PRODUCT_COUNT_DTL table
 4. Now install the python dependencies
    * pandas- `pip install pandas`
    * os- `pip install os`
@@ -33,20 +33,21 @@ Aim is to build a system which is able to handle long running processes in a dis
 
 ### Points achieved
 1. Your code should follow concept of OOPS. 
-   * Achieved
+   * **Achieved**
 2. Support for regular non-blocking parallel ingestion of the given file into a table. 
-   * Achieved, Used an approach to commit the ingestion of data after every 5000 records which provides regular non-blocking parallel ingestion of the given file into a table   
-3. Support for updating existing products in the table based on `sku` as the primary key.
-   * Achieved, Used an approach to update a product based on their `sku`    
+   * **Achieved**, Used an approach which will commit the ingestion of data after every 5000 records to provide regular non-blocking parallel ingestion of the given file into a table   
+3. Support for updating existing products in the table based on sku as the primary key.
+   * **Achieved**, Used an approach to update a product based on their `sku`    
 4. All product details are to be ingested into a single table.
-   * Achieved, all products details are ingested in `PRODUCTS` table. 
-5. An aggregated table on above rows with `name` and `no. of products` as the columns.
-   * Achieved, all product_name and their no_of_products are ingested in `PRODUCT_COUNT_DTL` table.
+   * **Achieved**, all products details are ingested in `PRODUCTS` table. 
+5. An aggregated table on above rows with name and no. of products as the columns.
+   * **Achieved**, all product_name and their no_of_products are ingested in `PRODUCT_COUNT_DTL` table.
 
 6. Number of entries in `PRODUCTS` table is- 1000000
 7. Number of entries in `PRODUCT_COUNT_DTL` table is- 222024
 8. 10 Sample Entries from `PRODUCTS` table-
-   * Note- Only Name and SKU are shown here in sample entries due to large values of description  
+   * Note- Only Name and SKU are shown here in sample entries due to large values of description
+     
  +--------------------------------------+---------------------+
 | NAME                                 | SKU                 |
 +--------------------------------------+---------------------+
@@ -63,6 +64,7 @@ Aim is to build a system which is able to handle long running processes in a dis
 +--------------------------------------+---------------------+
 
 8. 10 Sample Entries from `PRODUCT_COUNT_DTL` table-
+
 +-------------------+----------------+
 | PRODUCT_NAME      | NO_OF_PRODUCTS |
 +-------------------+----------------+
@@ -80,6 +82,6 @@ Aim is to build a system which is able to handle long running processes in a dis
 
 
 ### Improvement required
-* Can make a good UI based system which will take a CSV file as a input and process it into a required table.
+* Can make a good UI based system which will take a CSV file as an input and process it into a required table.
 
 
