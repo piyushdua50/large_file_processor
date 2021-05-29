@@ -1,5 +1,5 @@
 # Large file processor 
-Aim is to build a system which is able to handle long running processes in a distributed fashion. We need to be able to import products from a CSV file and into a database. There are half a million product details to be imported into the database.
+Aim is to build a system which is able to handle long running processes in a distributed fashion. It imports products from a CSV file and load it into a database. There are half a million product details to be imported into the database.
 
 
 **Technology-** Python3 and MySQL
